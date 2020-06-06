@@ -2,6 +2,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods
 # Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift,cocoapods
 
+.DS_Store
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
 
@@ -20,7 +21,7 @@ build/
 DerivedData/
 
 ## Various settings
-*.pbxuser
+https://github.com/soptkathon/soptkathon-client.git*.pbxuser
 !default.pbxuser
 *.mode1v3
 !default.mode1v3
