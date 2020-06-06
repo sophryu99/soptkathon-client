@@ -11,6 +11,14 @@ import UIKit
 class HeartCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "HeartCollectionViewCell"
     
+    @IBOutlet weak var imageView: UIImageView!
     
-
+    @IBOutlet weak var title: UILabel!
+    
+    func set(_ heartInformation: TravelSH) {
+           imageView.image = heartInformation.imageName
+           title.text = heartInformation.titleName
+           
+       }
+    
 }

@@ -39,6 +39,12 @@
 		18E830E5248C486000681047 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E4248C486000681047 /* APIConstants.swift */; };
 		18E830E8248C495E00681047 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E7248C495E00681047 /* NetworkResult.swift */; };
 		18E830EA248C4E0A00681047 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E9248C4E0A00681047 /* MusicData.swift */; };
+		01F3C91C248C2AEA007A4370 /* SigninData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C91B248C2AEA007A4370 /* SigninData.swift */; };
+		01F3C91E248C2B92007A4370 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C91D248C2B92007A4370 /* APIConstants.swift */; };
+		01F3C920248C2FD5007A4370 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C91F248C2FD5007A4370 /* NetworkResult.swift */; };
+		01F3C922248C3916007A4370 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F3C921248C3916007A4370 /* MyPage.storyboard */; };
+		01F3C924248C3935007A4370 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C923248C3935007A4370 /* MyPageVC.swift */; };
+		01F3C926248C3BFB007A4370 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F3C925248C3BFB007A4370 /* Tabbar.storyboard */; };
 		B473895EE6DAA4A454D00BC0 /* Pods_iOS_Soptkathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +83,12 @@
 		18E830E4248C486000681047 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = "iOS-Soptkathon/APIService/APIConstants.swift"; sourceTree = SOURCE_ROOT; };
 		18E830E7248C495E00681047 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkResult.swift; path = "iOS-Soptkathon/APIService/NetworkResult.swift"; sourceTree = SOURCE_ROOT; };
 		18E830E9248C4E0A00681047 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MusicData.swift; path = "iOS-Soptkathon/APIService/MusicData.swift"; sourceTree = SOURCE_ROOT; };
+		01F3C91B248C2AEA007A4370 /* SigninData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninData.swift; sourceTree = "<group>"; };
+		01F3C91D248C2B92007A4370 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		01F3C91F248C2FD5007A4370 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		01F3C921248C3916007A4370 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		01F3C923248C3935007A4370 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		01F3C925248C3BFB007A4370 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		21D2D67532A235A718405187 /* Pods-iOS-Soptkathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.release.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.release.xcconfig"; sourceTree = "<group>"; };
 		A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Soptkathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71447990B0A241DE95A37A7 /* Pods-iOS-Soptkathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +156,7 @@
 				0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */,
 				0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */,
 				01F3C919248C1F29007A4370 /* TabbarVC.swift */,
+				01F3C923248C3935007A4370 /* MyPageVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -158,6 +171,8 @@
 				01F3C8FB248BD30B007A4370 /* Location_2.storyboard */,
 				01F3C901248BD3B4007A4370 /* Category.storyboard */,
 				01F3C905248BD3DB007A4370 /* Play.storyboard */,
+				01F3C921248C3916007A4370 /* MyPage.storyboard */,
+				01F3C925248C3BFB007A4370 /* Tabbar.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -179,6 +194,9 @@
 			children = (
 				01F3C915248C1AE9007A4370 /* LoginService.swift */,
 				18E830E1248C47C300681047 /* MusicServiceJU.swift */,
+				01F3C91B248C2AEA007A4370 /* SigninData.swift */,
+				01F3C91D248C2B92007A4370 /* APIConstants.swift */,
+				01F3C91F248C2FD5007A4370 /* NetworkResult.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -286,10 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E830E0248C436600681047 /* IMG_9472.mp3 in Resources */,
+				01F3C926248C3BFB007A4370 /* Tabbar.storyboard in Resources */,
 				01F3C8EA248BB0AD007A4370 /* LaunchScreen.storyboard in Resources */,
 				01F3C8E7248BB0AD007A4370 /* Assets.xcassets in Resources */,
 				01F3C8E5248BB0AB007A4370 /* Login.storyboard in Resources */,
 				01F3C902248BD3B4007A4370 /* Category.storyboard in Resources */,
+				01F3C922248C3916007A4370 /* MyPage.storyboard in Resources */,
 				01F3C906248BD3DB007A4370 /* Play.storyboard in Resources */,
 				01F3C8F4248BD26D007A4370 /* Home.storyboard in Resources */,
 				01F3C8FC248BD30B007A4370 /* Location_2.storyboard in Resources */,
@@ -348,9 +368,12 @@
 			files = (
 				01F3C904248BD3C8007A4370 /* CategoryVC.swift in Sources */,
 				01F3C900248BD359007A4370 /* Location2VC.swift in Sources */,
+				01F3C91E248C2B92007A4370 /* APIConstants.swift in Sources */,
+				01F3C920248C2FD5007A4370 /* NetworkResult.swift in Sources */,
 				01F3C8E2248BB0AB007A4370 /* LoginVC.swift in Sources */,
 				0E1233C7248BE87600D3A9CA /* LocationCellSE.swift in Sources */,
 				01F3C8F6248BD28D007A4370 /* HomeVC.swift in Sources */,
+				01F3C924248C3935007A4370 /* MyPageVC.swift in Sources */,
 				01F3C90E248C081C007A4370 /* TravelSH.swift in Sources */,
 				01F3C90A248BE9A5007A4370 /* ContentsCollectionViewCell.swift in Sources */,
 				01F3C910248C083F007A4370 /* TravelCollectionViewCellSH.swift in Sources */,
@@ -367,6 +390,7 @@
 				0E535066248C05F0006E38E5 /* ThirdCategoryCellSE.swift in Sources */,
 				01F3C908248BD3E8007A4370 /* PlayVC.swift in Sources */,
 				01F3C8E0248BB0AB007A4370 /* SceneDelegate.swift in Sources */,
+				01F3C91C248C2AEA007A4370 /* SigninData.swift in Sources */,
 				01F3C916248C1AE9007A4370 /* LoginService.swift in Sources */,
 				01F3C91A248C1F29007A4370 /* TabbarVC.swift in Sources */,
 			);

@@ -10,7 +10,7 @@
         <!--Location1VC-->
         <scene sceneID="dy5-Wq-HCw">
             <objects>
-                <viewController id="cnh-L8-znU" customClass="Location1VC" customModule="iOS_Soptkathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Location1VC" id="cnh-L8-znU" customClass="Location1VC" customModule="iOS_Soptkathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RGA-Ae-nhk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
