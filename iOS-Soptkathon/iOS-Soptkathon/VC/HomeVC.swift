@@ -32,6 +32,7 @@ class HomeVC: UIViewController {
         TravelCollectionView.delegate = self
         TravelCollectionView.dataSource = self
         setTravelList()
+        setTravelView()
         
 
     }
@@ -52,6 +53,24 @@ class HomeVC: UIViewController {
         let sec5 = TravelSH(imageName: "homeContentsRowA02", titleName: "바쁜뉴욕의 길거리")
         
         travelList = [sec1, sec2, sec3, sec4, sec5]
+    }
+    
+    private func setTravelView() {
+        // width, height 설정
+        let cellWidth = TravelCollectionView.frame.width/2
+        let cellHeight = TravelCollectionView.frame.height
+         
+         // 상하 inset value 설정
+         //let insetY = (CatCollectionView.bounds.height - cellHeight) / 2.0
+         let layout = TravelCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+         layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+         layout.minimumLineSpacing = 0
+         layout.scrollDirection = .horizontal
+        
+         TravelCollectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+         
+         // 스크롤 시 빠르게 감속 되도록 설정
+         TravelCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
     }
 
 
