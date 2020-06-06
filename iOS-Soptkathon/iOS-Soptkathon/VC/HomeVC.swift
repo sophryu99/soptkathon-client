@@ -42,8 +42,6 @@ class HomeVC: UIViewController {
         setHeartList()
         setHeartView()
         
-        
-
     }
     
     private func setContentList() {
