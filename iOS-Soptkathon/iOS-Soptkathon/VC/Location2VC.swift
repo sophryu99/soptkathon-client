@@ -9,11 +9,22 @@
 import UIKit
 
 class Location2VC: UIViewController {
-
+    
+    @IBOutlet weak var firstCollectionView: UICollectionView!
+    @IBOutlet weak var secondCollectionView: UICollectionView!
+    @IBOutlet weak var thirdCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
+        
+        firstCollectionView.dataSource = self
+        firstCollectionView.delegate = self
+        secondCollectionView.dataSource = self
+        secondCollectionView.delegate = self
+        thirdCollectionView.dataSource = self
+        thirdCollectionView.delegate = self
     }
     
 
@@ -27,4 +38,32 @@ class Location2VC: UIViewController {
     }
     */
 
+}
+
+extension Location2VC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch collectionView {
+        case self.firstCollectionView:
+            guard let firstCell = collectionView.dequeueReusableCell(withReuseIdentifier: "firstCell", for: indexPath) as? FirstCategoryCellSE else { return UICollectionViewCell() }
+            return firstCell
+        case self.secondCollectionView:
+            guard let secondCell = collectionView.dequeueReusableCell(withReuseIdentifier: "secondCell", for: indexPath) as? SecondCategoryCellSE else { return UICollectionViewCell() }
+            return secondCell
+        default:
+            guard let thirdCell = collectionView.dequeueReusableCell(withReuseIdentifier: "thirdCell", for: indexPath) as? ThirdCategoryCellSE else { return UICollectionViewCell() }
+            return thirdCell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
 }
