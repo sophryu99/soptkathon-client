@@ -16,8 +16,11 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var TravelCollectionView: UICollectionView!
     
+    @IBOutlet weak var HeartCollectionView: UICollectionView!
     private var contentList : [ContentSH] = []
+    
     private var travelList: [TravelSH] = []
+    private var heartList: [TravelSH] = []
     
     
     override func viewDidLoad() {
@@ -33,6 +36,11 @@ class HomeVC: UIViewController {
         TravelCollectionView.dataSource = self
         setTravelList()
         setTravelView()
+        
+        HeartCollectionView.delegate = self
+        HeartCollectionView.dataSource = self
+        setHeartList()
+        
         
 
     }
@@ -55,6 +63,16 @@ class HomeVC: UIViewController {
         travelList = [sec1, sec2, sec3, sec4, sec5]
     }
     
+    private func setHeartList() {
+        let sec1 = TravelSH(imageName: "homeContentsRowA01", titleName: "바쁜뉴욕의 길거리")
+        let sec2 = TravelSH(imageName: "homeContentsRowA02", titleName: "영국의 크리스마스")
+        let sec3 = TravelSH(imageName: "homeContentsRowA03", titleName: "바쁜뉴욕의 길거리")
+        let sec4 = TravelSH(imageName: "homeContentsRowA01", titleName: "영국의 크리스마스")
+        let sec5 = TravelSH(imageName: "homeContentsRowA02", titleName: "바쁜뉴욕의 길거리")
+        
+        heartList = [sec1, sec2, sec3, sec4, sec5]
+    }
+    
     private func setTravelView() {
         // width, height 설정
         let cellWidth = TravelCollectionView.frame.width/2
@@ -74,23 +92,7 @@ class HomeVC: UIViewController {
     }
 
 
-//    private func setTravelView() {
-//        // width, height 설정
-//         let cellWidth = TravelCollectionView.frame.width
-//         let cellHeight = TravelCollectionView.frame.height
-//
-//        print(cellWidth)
-//
-//         // 상하 inset value 설정
-//         //let insetY = (TodayCollectionView.bounds.height - cellHeight) / 2.0
-//         let layout = TravelCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//         layout.itemSize = CGSize(width: cellWidth / 4, height: cellHeight)
-//         layout.minimumLineSpacing = 0
-//         layout.scrollDirection = .horizontal
-//
-//         TravelCollectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-//
-//    }
+    
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -116,10 +118,14 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
             guard let contentCell = collectionView.dequeueReusableCell(withReuseIdentifier: ContentsCollectionViewCell.identifier, for: indexPath) as? ContentsCollectionViewCell else { return UICollectionViewCell()}
             contentCell.set(contentList[indexPath.row])
             return contentCell
-        } else {
+        } else if collectionView == self.TravelCollectionView {
             guard let travelCell = collectionView.dequeueReusableCell(withReuseIdentifier: TravelCollectionViewCellSH.identifier, for: indexPath) as? TravelCollectionViewCellSH else { return UICollectionViewCell()}
             travelCell.set(travelList[indexPath.row])
             return travelCell
+        } else {
+            guard let heartCell = collectionView.dequeueReusableCell(withReuseIdentifier: HeartCollectionViewCell.identifier, for: indexPath) as? HeartCollectionViewCell else { return UICollectionViewCell()}
+            heartCell.set(heartList[indexPath.row])
+            return heartCell
         }
     }
     

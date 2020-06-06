@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timFosterMoJmTrr7E8UUnsplash" translatesAutoresizingMaskIntoConstraints="NO" id="DDE-mG-944">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginImg" translatesAutoresizingMaskIntoConstraints="NO" id="DDE-mG-944">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="아이디 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P1z-em-SZ1">
@@ -38,7 +38,7 @@
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXd-gS-E93">
                                 <rect key="frame" x="57.5" y="747" width="299" height="63"/>
@@ -51,6 +51,9 @@
                                 <state key="normal" title="확인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KjL-Ew-evi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -68,19 +71,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="MVS-6v-51H"/>
+                    <navigationItem key="navigationItem" id="wPK-En-wMC"/>
                     <connections>
                         <outlet property="idText" destination="P1z-em-SZ1" id="VRe-rz-yIR"/>
-                        <outlet property="login" destination="mXd-gS-E93" id="e3k-9B-9xb"/>
                         <outlet property="pwText" destination="lpv-IV-o6F" id="GHg-X1-gnF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+            <point key="canvasLocation" x="2868.115942028986" y="112.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="timFosterMoJmTrr7E8UUnsplash" width="1362" height="908"/>
+        <image name="loginImg" width="414.5" height="896"/>
     </resources>
 </document>
