@@ -19,7 +19,6 @@ struct SigininData: Codable {
         case success = "success"
         case message = "message"
         case data = "data"
-        
     }
     
     init(from decoder: Decoder) throws {

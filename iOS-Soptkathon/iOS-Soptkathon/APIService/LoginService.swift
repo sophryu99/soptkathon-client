@@ -14,15 +14,15 @@ struct LoginService {
     static let shared = LoginService()
     
     // Request Body에 들어갈 파라미터 생성
-    private func makeParameter(_ id: String, _ pwd: String) -> Parameters {
-        return ["id": id, "password": pwd]
+    private func makeParameter(_ id: String, _ password: String) -> Parameters {
+        return ["id": id, "password": password]
     }
 
-    func login(id: String, pwd: String, completion: @escaping (NetworkResult<Any>) -> Void) {
+    func login(id: String, password: String, completion: @escaping (NetworkResult<Any>) -> Void) {
         // Request Header 생성
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         // 원하는 형식의 HTTP Request 생성
-        let dataRequest = Alamofire.request(APIConstants.signinURL, method: .post, parameters: makeParameter(id, pwd), encoding:
+        let dataRequest = Alamofire.request(APIConstants.signinURL, method: .post, parameters: makeParameter(id, password), encoding:
             JSONEncoding.default, headers: header)
         // 데이터 통신 시작
         dataRequest.responseData { dataResponse in
@@ -32,7 +32,8 @@ struct LoginService {
                 guard let value = dataResponse.result.value else { return }
                 let networkResult = self.judge(by: statusCode, value)
                 completion(networkResult)
-            case .failure: completion(.networkFail)
+            case .failure:
+                completion(.networkFail)
             }
             
         }

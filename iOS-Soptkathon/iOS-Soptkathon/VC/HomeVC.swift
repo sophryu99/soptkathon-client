@@ -40,6 +40,7 @@ class HomeVC: UIViewController {
         HeartCollectionView.delegate = self
         HeartCollectionView.dataSource = self
         setHeartList()
+        setHeartView()
         
         
 
@@ -64,11 +65,11 @@ class HomeVC: UIViewController {
     }
     
     private func setHeartList() {
-        let sec1 = TravelSH(imageName: "homeContentsRowA01", titleName: "바쁜뉴욕의 길거리")
-        let sec2 = TravelSH(imageName: "homeContentsRowA02", titleName: "영국의 크리스마스")
-        let sec3 = TravelSH(imageName: "homeContentsRowA03", titleName: "바쁜뉴욕의 길거리")
-        let sec4 = TravelSH(imageName: "homeContentsRowA01", titleName: "영국의 크리스마스")
-        let sec5 = TravelSH(imageName: "homeContentsRowA02", titleName: "바쁜뉴욕의 길거리")
+        let sec1 = TravelSH(imageName: "homeContentsRowB01", titleName: "외딴섬 자르비스")
+        let sec2 = TravelSH(imageName: "homeContentsRowB02", titleName: "영국의 크리스마스")
+        let sec3 = TravelSH(imageName: "homeContentsRowB03", titleName: "바쁜뉴욕의 길거리")
+        let sec4 = TravelSH(imageName: "homeContentsRowB03", titleName: "영국의 크리스마스")
+        let sec5 = TravelSH(imageName: "homeContentsRowB03", titleName: "바쁜뉴욕의 길거리")
         
         heartList = [sec1, sec2, sec3, sec4, sec5]
     }
@@ -89,6 +90,24 @@ class HomeVC: UIViewController {
          
          // 스크롤 시 빠르게 감속 되도록 설정
          TravelCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+    }
+    
+    private func setHeartView() {
+        // width, height 설정
+        let cellWidth = HeartCollectionView.frame.width/2
+        let cellHeight = HeartCollectionView.frame.height
+         
+         // 상하 inset value 설정
+         //let insetY = (CatCollectionView.bounds.height - cellHeight) / 2.0
+         let layout = HeartCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+         layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+         layout.minimumLineSpacing = 0
+         layout.scrollDirection = .horizontal
+        
+         HeartCollectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+         
+         // 스크롤 시 빠르게 감속 되도록 설정
+         HeartCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
     }
 
 
