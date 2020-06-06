@@ -38,6 +38,7 @@
 		18E830E2248C47C300681047 /* MusicServiceJU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E1248C47C300681047 /* MusicServiceJU.swift */; };
 		18E830E5248C486000681047 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E4248C486000681047 /* APIConstants.swift */; };
 		18E830E8248C495E00681047 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E7248C495E00681047 /* NetworkResult.swift */; };
+		18E830EA248C4E0A00681047 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E9248C4E0A00681047 /* MusicData.swift */; };
 		B473895EE6DAA4A454D00BC0 /* Pods_iOS_Soptkathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		18E830E1248C47C300681047 /* MusicServiceJU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceJU.swift; sourceTree = "<group>"; };
 		18E830E4248C486000681047 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = "iOS-Soptkathon/APIService/APIConstants.swift"; sourceTree = SOURCE_ROOT; };
 		18E830E7248C495E00681047 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkResult.swift; path = "iOS-Soptkathon/APIService/NetworkResult.swift"; sourceTree = SOURCE_ROOT; };
+		18E830E9248C4E0A00681047 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MusicData.swift; path = "iOS-Soptkathon/APIService/MusicData.swift"; sourceTree = SOURCE_ROOT; };
 		21D2D67532A235A718405187 /* Pods-iOS-Soptkathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.release.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.release.xcconfig"; sourceTree = "<group>"; };
 		A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Soptkathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71447990B0A241DE95A37A7 /* Pods-iOS-Soptkathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				18E830E7248C495E00681047 /* NetworkResult.swift */,
+				18E830E9248C4E0A00681047 /* MusicData.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				01F3C90A248BE9A5007A4370 /* ContentsCollectionViewCell.swift in Sources */,
 				01F3C910248C083F007A4370 /* TravelCollectionViewCellSH.swift in Sources */,
 				18E830E5248C486000681047 /* APIConstants.swift in Sources */,
+				18E830EA248C4E0A00681047 /* MusicData.swift in Sources */,
 				01F3C912248C1528007A4370 /* HeartCollectionViewCell.swift in Sources */,
 				01F3C8FE248BD347007A4370 /* Location1VC.swift in Sources */,
 				0E535062248C05C6006E38E5 /* FirstCategoryCellSE.swift in Sources */,
