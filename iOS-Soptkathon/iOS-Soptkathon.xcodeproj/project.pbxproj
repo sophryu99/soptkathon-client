@@ -23,6 +23,7 @@
 		01F3C904248BD3C8007A4370 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C903248BD3C8007A4370 /* CategoryVC.swift */; };
 		01F3C906248BD3DB007A4370 /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F3C905248BD3DB007A4370 /* Play.storyboard */; };
 		01F3C908248BD3E8007A4370 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C907248BD3E8007A4370 /* PlayVC.swift */; };
+		0E1233C7248BE87600D3A9CA /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1233C6248BE87600D3A9CA /* LocationTableViewCell.swift */; };
 		B473895EE6DAA4A454D00BC0 /* Pods_iOS_Soptkathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		01F3C903248BD3C8007A4370 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		01F3C905248BD3DB007A4370 /* Play.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
 		01F3C907248BD3E8007A4370 /* PlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		0E1233C6248BE87600D3A9CA /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		21D2D67532A235A718405187 /* Pods-iOS-Soptkathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.release.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.release.xcconfig"; sourceTree = "<group>"; };
 		A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Soptkathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71447990B0A241DE95A37A7 /* Pods-iOS-Soptkathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				01F3C8FF248BD359007A4370 /* Location2VC.swift */,
 				01F3C903248BD3C8007A4370 /* CategoryVC.swift */,
 				01F3C907248BD3E8007A4370 /* PlayVC.swift */,
+				0E1233C6248BE87600D3A9CA /* LocationTableViewCell.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				01F3C904248BD3C8007A4370 /* CategoryVC.swift in Sources */,
 				01F3C900248BD359007A4370 /* Location2VC.swift in Sources */,
 				01F3C8E2248BB0AB007A4370 /* LoginVC.swift in Sources */,
+				0E1233C7248BE87600D3A9CA /* LocationTableViewCell.swift in Sources */,
 				01F3C8F6248BD28D007A4370 /* HomeVC.swift in Sources */,
 				01F3C8FE248BD347007A4370 /* Location1VC.swift in Sources */,
 				01F3C8DE248BB0AB007A4370 /* AppDelegate.swift in Sources */,
