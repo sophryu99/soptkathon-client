@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WUa-i9-QZ1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WUa-i9-QZ1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -74,19 +74,19 @@
                                                                     </connections>
                                                                 </button>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingLikeRowA01" translatesAutoresizingMaskIntoConstraints="NO" id="kOt-a9-Gf2">
-                                                                    <rect key="frame" x="0.0" y="179" width="28" height="38"/>
+                                                                    <rect key="frame" x="0.0" y="179" width="14" height="19"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avp-bU-RWQ">
-                                                                    <rect key="frame" x="30" y="187.5" width="44" height="21"/>
+                                                                    <rect key="frame" x="16" y="178" width="44" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" name="brownishGrey"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingCommentRowA01" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-74-scE">
-                                                                    <rect key="frame" x="84" y="179" width="44" height="38"/>
+                                                                    <rect key="frame" x="70" y="179" width="22" height="19"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjp-Kl-dJU">
-                                                                    <rect key="frame" x="131" y="179" width="44" height="21"/>
+                                                                    <rect key="frame" x="95" y="179" width="44" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" name="brownishGrey"/>
                                                                     <nil key="highlightedColor"/>
@@ -166,19 +166,19 @@
                                                                     <state key="normal" image="btnUnselLikeRowB01"/>
                                                                 </button>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingLikeRowA01" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-ZO-yUQ">
-                                                                    <rect key="frame" x="0.0" y="179" width="28" height="38"/>
+                                                                    <rect key="frame" x="0.0" y="179" width="14" height="19"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNL-U4-C2b">
-                                                                    <rect key="frame" x="30" y="179" width="44" height="21"/>
+                                                                    <rect key="frame" x="16" y="179" width="44" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" name="brownishGrey"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingCommentRowA01" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-cs-FtZ">
-                                                                    <rect key="frame" x="85" y="179" width="44" height="38"/>
+                                                                    <rect key="frame" x="71" y="179" width="22" height="19"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf9-zK-cVj">
-                                                                    <rect key="frame" x="132" y="179" width="44" height="21"/>
+                                                                    <rect key="frame" x="96" y="179" width="44" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" name="brownishGrey"/>
                                                                     <nil key="highlightedColor"/>
@@ -258,19 +258,19 @@
                                                                     <state key="normal" image="btnUnselLikeRowB01"/>
                                                                 </button>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingLikeRowA01" translatesAutoresizingMaskIntoConstraints="NO" id="IJS-fO-Zgm">
-                                                                    <rect key="frame" x="0.0" y="179" width="28" height="38"/>
+                                                                    <rect key="frame" x="0.0" y="179" width="14" height="19"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP5-io-2gW">
-                                                                    <rect key="frame" x="30" y="179" width="44" height="21"/>
+                                                                    <rect key="frame" x="16" y="179" width="44" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" name="brownishGrey"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingCommentRowA01" translatesAutoresizingMaskIntoConstraints="NO" id="m6u-Un-UUD">
-                                                                    <rect key="frame" x="85" y="179" width="44" height="38"/>
+                                                                    <rect key="frame" x="71" y="179" width="22" height="19"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfH-Qj-ZZJ">
-                                                                    <rect key="frame" x="132" y="179" width="44" height="21"/>
+                                                                    <rect key="frame" x="96" y="179" width="44" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" name="brownishGrey"/>
                                                                     <nil key="highlightedColor"/>
@@ -359,11 +359,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uit-mK-xLc">
-                                <rect key="frame" x="10" y="29.5" width="88" height="88"/>
+                                <rect key="frame" x="10" y="51.5" width="44" height="44"/>
                                 <state key="normal" image="btnBack"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsG-EB-f27">
-                                <rect key="frame" x="302" y="29.5" width="88" height="88"/>
+                                <rect key="frame" x="346" y="51.5" width="44" height="44"/>
                                 <state key="normal" image="btnChange"/>
                             </button>
                         </subviews>

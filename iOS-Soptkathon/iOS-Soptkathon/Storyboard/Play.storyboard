@@ -10,7 +10,7 @@
         <!--PlayVC-->
         <scene sceneID="zMI-w7-oXd">
             <objects>
-                <viewController id="xFZ-1b-0mV" customClass="PlayVC" customModule="iOS_Soptkathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayVC" id="xFZ-1b-0mV" customClass="PlayVC" customModule="iOS_Soptkathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xLM-hi-iSL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

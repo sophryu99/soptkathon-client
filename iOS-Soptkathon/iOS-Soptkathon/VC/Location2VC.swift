@@ -54,6 +54,15 @@ extension Location2VC: UICollectionViewDataSource, UICollectionViewDelegate, UIC
         return 2
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.secondCollectionView {
+            let storyboard = UIStoryboard.init(name: "Play", bundle: nil)
+            guard let view = storyboard.instantiateViewController(identifier: "PlayVC") as? PlayVC else { return }
+            
+            self.present(view, animated: true)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         /*MusicServiceSE.shared.getMusicList { networkResult in
