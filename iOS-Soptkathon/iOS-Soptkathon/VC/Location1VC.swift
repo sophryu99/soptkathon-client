@@ -12,15 +12,23 @@ class Location1VC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    let locationNameList: [String] = ["아시아", "유럽", "아프리카", "남아메리카"]
+    let locationEngList: [String] = ["Asia", "Europe", "Africa", "South America"]
+    let locationImgList: [String] = ["asiaImg", "europeImg", "africaImg", "saImg"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     /*
     // MARK: - Navigation
@@ -31,18 +39,19 @@ class Location1VC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
 
 extension Location1VC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "LocationCellSE", for: indexPath) as? LocationCellSE else { return UITableViewCell() }
-        cell.nameLabel.text = "여행지 이름"
-        cell.explainLabel.text = "여행지 설명"
+        cell.locationImageView.image = UIImage(named: locationImgList[indexPath.row])
+        cell.nameLabel.text = locationNameList[indexPath.row]
+        cell.engLabel.text = locationEngList[indexPath.row]
+
         return cell
     }
     

@@ -10,8 +10,9 @@ import UIKit
 
 class LocationCellSE: UITableViewCell {
 
+    @IBOutlet weak var locationImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var explainLabel: UILabel!
+    @IBOutlet weak var engLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
