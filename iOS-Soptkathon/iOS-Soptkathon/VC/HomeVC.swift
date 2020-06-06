@@ -10,21 +10,152 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var ContentsCollectionView: UICollectionView!
+    
+    @IBOutlet weak var contentPageControl: UIPageControl!
+    
+    @IBOutlet weak var TravelCollectionView: UICollectionView!
+    
+    private var contentList : [ContentSH] = []
+    private var travelList: [TravelSH] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ContentsCollectionView.delegate = self
+        ContentsCollectionView.dataSource = self
+        setContentList()
+        contentPageControl.pageIndicatorTintColor = .gray
+        contentPageControl.currentPageIndicatorTintColor = .white
+        
+        TravelCollectionView.delegate = self
+        TravelCollectionView.dataSource = self
+        setTravelList()
+        setTravelView()
+        
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setContentList() {
+        let sec1 = ContentSH(imageName: "12", titleName: "도쿄의 심장, 오사카", subtitleName: "누군가에겐 늘 똑같은 일상이 다른 누군가에겐 특별한 순간으로 기억됩니다.")
+        let sec2 = ContentSH(imageName: "12", titleName: "도쿄의 심장, 오사카", subtitleName: "누군가에겐 늘 똑같은 일상이 다른 누군가에겐 특별한 순간으로 기억됩니다.")
+        let sec3 = ContentSH(imageName: "12", titleName: "도쿄의 심장, 오사카", subtitleName: "누군가에겐 늘 똑같은 일상이 다른 누군가에겐 특별한 순간으로 기억됩니다.")
+        
+        contentList = [sec1, sec2, sec3]
     }
-    */
+    
+    private func setTravelList() {
+        let sec1 = TravelSH(imageName: "homeContentsRowA01", titleName: "바쁜뉴욕의 길거리")
+        let sec2 = TravelSH(imageName: "homeContentsRowA02", titleName: "영국의 크리스마스")
+        let sec3 = TravelSH(imageName: "homeContentsRowA03", titleName: "바쁜뉴욕의 길거리")
+        let sec4 = TravelSH(imageName: "homeContentsRowA01", titleName: "영국의 크리스마스")
+        let sec5 = TravelSH(imageName: "homeContentsRowA02", titleName: "바쁜뉴욕의 길거리")
+        
+        travelList = [sec1, sec2, sec3, sec4, sec5]
+    }
+    
+    private func setTravelView() {
+        // width, height 설정
+        let cellWidth = TravelCollectionView.frame.width/2
+        let cellHeight = TravelCollectionView.frame.height
+         
+         // 상하 inset value 설정
+         //let insetY = (CatCollectionView.bounds.height - cellHeight) / 2.0
+         let layout = TravelCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+         layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+         layout.minimumLineSpacing = 0
+         layout.scrollDirection = .horizontal
+        
+         TravelCollectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+         
+         // 스크롤 시 빠르게 감속 되도록 설정
+         TravelCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+    }
 
+
+//    private func setTravelView() {
+//        // width, height 설정
+//         let cellWidth = TravelCollectionView.frame.width
+//         let cellHeight = TravelCollectionView.frame.height
+//
+//        print(cellWidth)
+//
+//         // 상하 inset value 설정
+//         //let insetY = (TodayCollectionView.bounds.height - cellHeight) / 2.0
+//         let layout = TravelCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//         layout.itemSize = CGSize(width: cellWidth / 4, height: cellHeight)
+//         layout.minimumLineSpacing = 0
+//         layout.scrollDirection = .horizontal
+//
+//         TravelCollectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+//
+//    }
 }
+
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if collectionView == self.ContentsCollectionView {
+            return 1
+        } else {
+            return 1
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.ContentsCollectionView {
+            contentPageControl.numberOfPages = contentList.count
+            return contentList.count
+        } else {
+            return travelList.count
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == self.ContentsCollectionView {
+            guard let contentCell = collectionView.dequeueReusableCell(withReuseIdentifier: ContentsCollectionViewCell.identifier, for: indexPath) as? ContentsCollectionViewCell else { return UICollectionViewCell()}
+            contentCell.set(contentList[indexPath.row])
+            return contentCell
+        } else {
+            guard let travelCell = collectionView.dequeueReusableCell(withReuseIdentifier: TravelCollectionViewCellSH.identifier, for: indexPath) as? TravelCollectionViewCellSH else { return UICollectionViewCell()}
+            travelCell.set(travelList[indexPath.row])
+            return travelCell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == self.ContentsCollectionView {
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        } else {
+            return CGSize(width: collectionView.frame.width/1.5, height: collectionView.frame.height)
+        }
+    
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+            if collectionView == self.ContentsCollectionView {
+                return 0
+            } else {
+                return 10
+            }
+
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        if collectionView == self.ContentsCollectionView {
+            return 0
+        } else {
+            return 15
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        contentPageControl?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+
+    }
+
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        contentPageControl?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+    }
+}
+

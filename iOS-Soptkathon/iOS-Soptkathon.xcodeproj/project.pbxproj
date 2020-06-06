@@ -27,6 +27,14 @@
 		0E535062248C05C6006E38E5 /* FirstCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */; };
 		0E535064248C05E3006E38E5 /* SecondCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */; };
 		0E535066248C05F0006E38E5 /* ThirdCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */; };
+
+		01F3C90A248BE9A5007A4370 /* ContentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */; };
+		01F3C90C248BED8E007A4370 /* ContentSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90B248BED8E007A4370 /* ContentSH.swift */; };
+		01F3C90E248C081C007A4370 /* TravelSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90D248C081C007A4370 /* TravelSH.swift */; };
+		01F3C910248C083F007A4370 /* TravelCollectionViewCellSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90F248C083F007A4370 /* TravelCollectionViewCellSH.swift */; };
+		01F3C912248C1528007A4370 /* HeartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C911248C1528007A4370 /* HeartCollectionViewCell.swift */; };
+		01F3C916248C1AE9007A4370 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C915248C1AE9007A4370 /* LoginService.swift */; };
+		01F3C91A248C1F29007A4370 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C919248C1F29007A4370 /* TabbarVC.swift */; };
 		B473895EE6DAA4A454D00BC0 /* Pods_iOS_Soptkathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +61,13 @@
 		0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCategoryCellSE.swift; sourceTree = "<group>"; };
 		0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCategoryCellSE.swift; sourceTree = "<group>"; };
 		0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCategoryCellSE.swift; sourceTree = "<group>"; };
+		01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		01F3C90B248BED8E007A4370 /* ContentSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSH.swift; sourceTree = "<group>"; };
+		01F3C90D248C081C007A4370 /* TravelSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSH.swift; sourceTree = "<group>"; };
+		01F3C90F248C083F007A4370 /* TravelCollectionViewCellSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCollectionViewCellSH.swift; sourceTree = "<group>"; };
+		01F3C911248C1528007A4370 /* HeartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartCollectionViewCell.swift; sourceTree = "<group>"; };
+		01F3C915248C1AE9007A4370 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		01F3C919248C1F29007A4370 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		21D2D67532A235A718405187 /* Pods-iOS-Soptkathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.release.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.release.xcconfig"; sourceTree = "<group>"; };
 		A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Soptkathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71447990B0A241DE95A37A7 /* Pods-iOS-Soptkathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +106,8 @@
 		01F3C8DC248BB0AB007A4370 /* iOS-Soptkathon */ = {
 			isa = PBXGroup;
 			children = (
+				01F3C914248C1ACC007A4370 /* APIService */,
+				01F3C913248C1A82007A4370 /* Cell */,
 				01F3C8F8248BD2C4007A4370 /* Storyboard */,
 				01F3C8F7248BD2B4007A4370 /* VC */,
 				01F3C8DD248BB0AB007A4370 /* AppDelegate.swift */,
@@ -114,6 +131,7 @@
 				0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */,
 				0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */,
 				0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */,
+				01F3C919248C1F29007A4370 /* TabbarVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -130,6 +148,26 @@
 				01F3C905248BD3DB007A4370 /* Play.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		01F3C913248C1A82007A4370 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */,
+				01F3C911248C1528007A4370 /* HeartCollectionViewCell.swift */,
+				01F3C90B248BED8E007A4370 /* ContentSH.swift */,
+				01F3C90D248C081C007A4370 /* TravelSH.swift */,
+				01F3C90F248C083F007A4370 /* TravelCollectionViewCellSH.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		01F3C914248C1ACC007A4370 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				01F3C915248C1AE9007A4370 /* LoginService.swift */,
+			);
+			path = APIService;
 			sourceTree = "<group>";
 		};
 		415D7D00205B42B8B697F7E5 /* Frameworks */ = {
@@ -274,13 +312,20 @@
 				01F3C8E2248BB0AB007A4370 /* LoginVC.swift in Sources */,
 				0E1233C7248BE87600D3A9CA /* LocationCellSE.swift in Sources */,
 				01F3C8F6248BD28D007A4370 /* HomeVC.swift in Sources */,
+				01F3C90E248C081C007A4370 /* TravelSH.swift in Sources */,
+				01F3C90A248BE9A5007A4370 /* ContentsCollectionViewCell.swift in Sources */,
+				01F3C910248C083F007A4370 /* TravelCollectionViewCellSH.swift in Sources */,
+				01F3C912248C1528007A4370 /* HeartCollectionViewCell.swift in Sources */,
 				01F3C8FE248BD347007A4370 /* Location1VC.swift in Sources */,
 				0E535062248C05C6006E38E5 /* FirstCategoryCellSE.swift in Sources */,
+				01F3C90C248BED8E007A4370 /* ContentSH.swift in Sources */,
 				01F3C8DE248BB0AB007A4370 /* AppDelegate.swift in Sources */,
 				0E535064248C05E3006E38E5 /* SecondCategoryCellSE.swift in Sources */,
 				0E535066248C05F0006E38E5 /* ThirdCategoryCellSE.swift in Sources */,
 				01F3C908248BD3E8007A4370 /* PlayVC.swift in Sources */,
 				01F3C8E0248BB0AB007A4370 /* SceneDelegate.swift in Sources */,
+				01F3C916248C1AE9007A4370 /* LoginService.swift in Sources */,
+				01F3C91A248C1F29007A4370 /* TabbarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
