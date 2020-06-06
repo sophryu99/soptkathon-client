@@ -59,6 +59,8 @@ extension Location1VC: UITableViewDataSource, UITableViewDelegate {
         let storyboard = UIStoryboard.init(name: "Location_2", bundle: nil)
         guard let view = storyboard.instantiateViewController(identifier: "Location2VC") as? Location2VC else { return }
         
+        view.locationName = self.locationNameList[indexPath.row]
+        
         self.navigationController?.pushViewController(view, animated: true)
     }
 }
