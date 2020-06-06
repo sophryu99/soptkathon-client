@@ -1,5 +1,5 @@
 //
-//  LocationTableViewCell.swift
+//  LocationCellSE.swift
 //  iOS-Soptkathon
 //
 //  Created by 김성은 on 2020/06/07.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationTableViewCell: UITableViewCell {
+class LocationCellSE: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var explainLabel: UILabel!

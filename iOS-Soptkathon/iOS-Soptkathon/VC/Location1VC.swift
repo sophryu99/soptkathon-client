@@ -16,6 +16,9 @@ class Location1VC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
 
@@ -37,12 +40,16 @@ extension Location1VC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "LocationTableViewCell", for: indexPath) as? LocationTableViewCell else { return UITableViewCell() }
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "LocationCellSE", for: indexPath) as? LocationCellSE else { return UITableViewCell() }
+        cell.nameLabel.text = "여행지 이름"
+        cell.explainLabel.text = "여행지 설명"
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        let storyboard = UIStoryboard.init(name: "Location_2", bundle: nil)
+        guard let view = storyboard.instantiateViewController(identifier: "Location2VC") as? Location2VC else { return }
+        
+        self.navigationController?.pushViewController(view, animated: true)
     }
 }
