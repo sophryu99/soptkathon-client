@@ -25,6 +25,8 @@
 		01F3C908248BD3E8007A4370 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C907248BD3E8007A4370 /* PlayVC.swift */; };
 		01F3C90A248BE9A5007A4370 /* ContentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */; };
 		01F3C90C248BED8E007A4370 /* ContentSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90B248BED8E007A4370 /* ContentSH.swift */; };
+		01F3C90E248C081C007A4370 /* TravelSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90D248C081C007A4370 /* TravelSH.swift */; };
+		01F3C910248C083F007A4370 /* TravelCollectionViewCellSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90F248C083F007A4370 /* TravelCollectionViewCellSH.swift */; };
 		B473895EE6DAA4A454D00BC0 /* Pods_iOS_Soptkathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		01F3C907248BD3E8007A4370 /* PlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
 		01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		01F3C90B248BED8E007A4370 /* ContentSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSH.swift; sourceTree = "<group>"; };
+		01F3C90D248C081C007A4370 /* TravelSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSH.swift; sourceTree = "<group>"; };
+		01F3C90F248C083F007A4370 /* TravelCollectionViewCellSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCollectionViewCellSH.swift; sourceTree = "<group>"; };
 		21D2D67532A235A718405187 /* Pods-iOS-Soptkathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.release.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.release.xcconfig"; sourceTree = "<group>"; };
 		A1313729AC1ADCBD77AE30B3 /* Pods_iOS_Soptkathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Soptkathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71447990B0A241DE95A37A7 /* Pods-iOS-Soptkathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Soptkathon.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Soptkathon/Pods-iOS-Soptkathon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				01F3C8EB248BB0AD007A4370 /* Info.plist */,
 				01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */,
 				01F3C90B248BED8E007A4370 /* ContentSH.swift */,
+				01F3C90D248C081C007A4370 /* TravelSH.swift */,
+				01F3C90F248C083F007A4370 /* TravelCollectionViewCellSH.swift */,
 			);
 			path = "iOS-Soptkathon";
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 				01F3C900248BD359007A4370 /* Location2VC.swift in Sources */,
 				01F3C8E2248BB0AB007A4370 /* LoginVC.swift in Sources */,
 				01F3C8F6248BD28D007A4370 /* HomeVC.swift in Sources */,
+				01F3C90E248C081C007A4370 /* TravelSH.swift in Sources */,
 				01F3C90A248BE9A5007A4370 /* ContentsCollectionViewCell.swift in Sources */,
+				01F3C910248C083F007A4370 /* TravelCollectionViewCellSH.swift in Sources */,
 				01F3C8FE248BD347007A4370 /* Location1VC.swift in Sources */,
 				01F3C90C248BED8E007A4370 /* ContentSH.swift in Sources */,
 				01F3C8DE248BB0AB007A4370 /* AppDelegate.swift in Sources */,
