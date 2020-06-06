@@ -23,6 +23,11 @@
 		01F3C904248BD3C8007A4370 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C903248BD3C8007A4370 /* CategoryVC.swift */; };
 		01F3C906248BD3DB007A4370 /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F3C905248BD3DB007A4370 /* Play.storyboard */; };
 		01F3C908248BD3E8007A4370 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C907248BD3E8007A4370 /* PlayVC.swift */; };
+		0E1233C7248BE87600D3A9CA /* LocationCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1233C6248BE87600D3A9CA /* LocationCellSE.swift */; };
+		0E535062248C05C6006E38E5 /* FirstCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */; };
+		0E535064248C05E3006E38E5 /* SecondCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */; };
+		0E535066248C05F0006E38E5 /* ThirdCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */; };
+
 		01F3C90A248BE9A5007A4370 /* ContentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */; };
 		01F3C90C248BED8E007A4370 /* ContentSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90B248BED8E007A4370 /* ContentSH.swift */; };
 		01F3C90E248C081C007A4370 /* TravelSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C90D248C081C007A4370 /* TravelSH.swift */; };
@@ -58,6 +63,10 @@
 		01F3C903248BD3C8007A4370 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		01F3C905248BD3DB007A4370 /* Play.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
 		01F3C907248BD3E8007A4370 /* PlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		0E1233C6248BE87600D3A9CA /* LocationCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellSE.swift; sourceTree = "<group>"; };
+		0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCategoryCellSE.swift; sourceTree = "<group>"; };
+		0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCategoryCellSE.swift; sourceTree = "<group>"; };
+		0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCategoryCellSE.swift; sourceTree = "<group>"; };
 		01F3C909248BE9A5007A4370 /* ContentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		01F3C90B248BED8E007A4370 /* ContentSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSH.swift; sourceTree = "<group>"; };
 		01F3C90D248C081C007A4370 /* TravelSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSH.swift; sourceTree = "<group>"; };
@@ -130,6 +139,10 @@
 				01F3C8FF248BD359007A4370 /* Location2VC.swift */,
 				01F3C903248BD3C8007A4370 /* CategoryVC.swift */,
 				01F3C907248BD3E8007A4370 /* PlayVC.swift */,
+				0E1233C6248BE87600D3A9CA /* LocationCellSE.swift */,
+				0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */,
+				0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */,
+				0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */,
 				01F3C919248C1F29007A4370 /* TabbarVC.swift */,
 				01F3C923248C3935007A4370 /* MyPageVC.swift */,
 			);
@@ -319,6 +332,7 @@
 				01F3C91E248C2B92007A4370 /* APIConstants.swift in Sources */,
 				01F3C920248C2FD5007A4370 /* NetworkResult.swift in Sources */,
 				01F3C8E2248BB0AB007A4370 /* LoginVC.swift in Sources */,
+				0E1233C7248BE87600D3A9CA /* LocationCellSE.swift in Sources */,
 				01F3C8F6248BD28D007A4370 /* HomeVC.swift in Sources */,
 				01F3C924248C3935007A4370 /* MyPageVC.swift in Sources */,
 				01F3C90E248C081C007A4370 /* TravelSH.swift in Sources */,
@@ -326,8 +340,11 @@
 				01F3C910248C083F007A4370 /* TravelCollectionViewCellSH.swift in Sources */,
 				01F3C912248C1528007A4370 /* HeartCollectionViewCell.swift in Sources */,
 				01F3C8FE248BD347007A4370 /* Location1VC.swift in Sources */,
+				0E535062248C05C6006E38E5 /* FirstCategoryCellSE.swift in Sources */,
 				01F3C90C248BED8E007A4370 /* ContentSH.swift in Sources */,
 				01F3C8DE248BB0AB007A4370 /* AppDelegate.swift in Sources */,
+				0E535064248C05E3006E38E5 /* SecondCategoryCellSE.swift in Sources */,
+				0E535066248C05F0006E38E5 /* ThirdCategoryCellSE.swift in Sources */,
 				01F3C908248BD3E8007A4370 /* PlayVC.swift in Sources */,
 				01F3C8E0248BB0AB007A4370 /* SceneDelegate.swift in Sources */,
 				01F3C91C248C2AEA007A4370 /* SigninData.swift in Sources */,
