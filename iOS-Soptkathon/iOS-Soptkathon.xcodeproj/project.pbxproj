@@ -34,7 +34,11 @@
 		0E535062248C05C6006E38E5 /* FirstCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */; };
 		0E535064248C05E3006E38E5 /* SecondCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */; };
 		0E535066248C05F0006E38E5 /* ThirdCategoryCellSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */; };
-		18E830E0248C436600681047 /* IMG_9472.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18E830DF248C436600681047 /* IMG_9472.mp3 */; };
+		0E9AC9A2248C4C20003B4CFA /* IMG_9472.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E9AC9A1248C4C20003B4CFA /* IMG_9472.mp3 */; };
+		0E9AC9A4248C4E02003B4CFA /* MusicServiceSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AC9A3248C4E02003B4CFA /* MusicServiceSE.swift */; };
+		0E9AC9A6248C4E68003B4CFA /* MusicsDataSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AC9A5248C4E68003B4CFA /* MusicsDataSE.swift */; };
+		0E9AC9A8248C5349003B4CFA /* HeartsServiceSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AC9A7248C5349003B4CFA /* HeartsServiceSE.swift */; };
+		0E9AC9AA248C54AA003B4CFA /* HeartsDataSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AC9A9248C54AA003B4CFA /* HeartsDataSE.swift */; };
 		18E830E2248C47C300681047 /* MusicServiceJU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E1248C47C300681047 /* MusicServiceJU.swift */; };
 		18E830E5248C486000681047 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E4248C486000681047 /* APIConstants.swift */; };
 		18E830E8248C495E00681047 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E830E7248C495E00681047 /* NetworkResult.swift */; };
@@ -78,7 +82,11 @@
 		0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCategoryCellSE.swift; sourceTree = "<group>"; };
 		0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCategoryCellSE.swift; sourceTree = "<group>"; };
 		0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCategoryCellSE.swift; sourceTree = "<group>"; };
-		18E830DF248C436600681047 /* IMG_9472.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = IMG_9472.mp3; path = "../../../../soptkathon-client-yangjaeuk/iOS-Soptkathon/iOS-Soptkathon/Audios/IMG_9472.mp3"; sourceTree = "<group>"; };
+		0E9AC9A1248C4C20003B4CFA /* IMG_9472.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IMG_9472.mp3; sourceTree = "<group>"; };
+		0E9AC9A3248C4E02003B4CFA /* MusicServiceSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceSE.swift; sourceTree = "<group>"; };
+		0E9AC9A5248C4E68003B4CFA /* MusicsDataSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsDataSE.swift; sourceTree = "<group>"; };
+		0E9AC9A7248C5349003B4CFA /* HeartsServiceSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsServiceSE.swift; sourceTree = "<group>"; };
+		0E9AC9A9248C54AA003B4CFA /* HeartsDataSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsDataSE.swift; sourceTree = "<group>"; };
 		18E830E1248C47C300681047 /* MusicServiceJU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceJU.swift; sourceTree = "<group>"; };
 		18E830E4248C486000681047 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = "iOS-Soptkathon/APIService/APIConstants.swift"; sourceTree = SOURCE_ROOT; };
 		18E830E7248C495E00681047 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkResult.swift; path = "iOS-Soptkathon/APIService/NetworkResult.swift"; sourceTree = SOURCE_ROOT; };
@@ -128,8 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				18E830E6248C493800681047 /* Network */,
+				0E9AC9A0248C4C05003B4CFA /* Audios */,
 				18E830E3248C483A00681047 /* APIConstants */,
-				18E830DE248C435400681047 /* Audio */,
 				01F3C914248C1ACC007A4370 /* APIService */,
 				01F3C913248C1A82007A4370 /* Cell */,
 				01F3C8F8248BD2C4007A4370 /* Storyboard */,
@@ -146,12 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				01F3C8F5248BD28D007A4370 /* HomeVC.swift */,
+				0E1233C6248BE87600D3A9CA /* LocationCellSE.swift */,
 				01F3C8E1248BB0AB007A4370 /* LoginVC.swift */,
 				01F3C8FD248BD347007A4370 /* Location1VC.swift */,
 				01F3C8FF248BD359007A4370 /* Location2VC.swift */,
 				01F3C903248BD3C8007A4370 /* CategoryVC.swift */,
 				01F3C907248BD3E8007A4370 /* PlayVC.swift */,
-				0E1233C6248BE87600D3A9CA /* LocationCellSE.swift */,
 				0E535061248C05C6006E38E5 /* FirstCategoryCellSE.swift */,
 				0E535063248C05E3006E38E5 /* SecondCategoryCellSE.swift */,
 				0E535065248C05F0006E38E5 /* ThirdCategoryCellSE.swift */,
@@ -197,16 +205,18 @@
 				01F3C91B248C2AEA007A4370 /* SigninData.swift */,
 				01F3C91D248C2B92007A4370 /* APIConstants.swift */,
 				01F3C91F248C2FD5007A4370 /* NetworkResult.swift */,
+				0E9AC9A3248C4E02003B4CFA /* MusicServiceSE.swift */,
+				0E9AC9A7248C5349003B4CFA /* HeartsServiceSE.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
 		};
-		18E830DE248C435400681047 /* Audio */ = {
+		0E9AC9A0248C4C05003B4CFA /* Audios */ = {
 			isa = PBXGroup;
 			children = (
-				18E830DF248C436600681047 /* IMG_9472.mp3 */,
+				0E9AC9A1248C4C20003B4CFA /* IMG_9472.mp3 */,
 			);
-			path = Audio;
+			path = Audios;
 			sourceTree = "<group>";
 		};
 		18E830E3248C483A00681047 /* APIConstants */ = {
@@ -222,6 +232,8 @@
 			children = (
 				18E830E7248C495E00681047 /* NetworkResult.swift */,
 				18E830E9248C4E0A00681047 /* MusicData.swift */,
+				0E9AC9A5248C4E68003B4CFA /* MusicsDataSE.swift */,
+				0E9AC9A9248C54AA003B4CFA /* HeartsDataSE.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -305,6 +317,7 @@
 			files = (
 				18E830E0248C436600681047 /* IMG_9472.mp3 in Resources */,
 				01F3C926248C3BFB007A4370 /* Tabbar.storyboard in Resources */,
+				0E9AC9A2248C4C20003B4CFA /* IMG_9472.mp3 in Resources */,
 				01F3C8EA248BB0AD007A4370 /* LaunchScreen.storyboard in Resources */,
 				01F3C8E7248BB0AD007A4370 /* Assets.xcassets in Resources */,
 				01F3C8E5248BB0AB007A4370 /* Login.storyboard in Resources */,
@@ -380,9 +393,12 @@
 				18E830E5248C486000681047 /* APIConstants.swift in Sources */,
 				18E830EA248C4E0A00681047 /* MusicData.swift in Sources */,
 				01F3C912248C1528007A4370 /* HeartCollectionViewCell.swift in Sources */,
+				0E9AC9AA248C54AA003B4CFA /* HeartsDataSE.swift in Sources */,
 				01F3C8FE248BD347007A4370 /* Location1VC.swift in Sources */,
+				0E9AC9A4248C4E02003B4CFA /* MusicServiceSE.swift in Sources */,
 				0E535062248C05C6006E38E5 /* FirstCategoryCellSE.swift in Sources */,
 				01F3C90C248BED8E007A4370 /* ContentSH.swift in Sources */,
+				0E9AC9A8248C5349003B4CFA /* HeartsServiceSE.swift in Sources */,
 				18E830E8248C495E00681047 /* NetworkResult.swift in Sources */,
 				18E830E2248C47C300681047 /* MusicServiceJU.swift in Sources */,
 				01F3C8DE248BB0AB007A4370 /* AppDelegate.swift in Sources */,
@@ -391,6 +407,7 @@
 				01F3C908248BD3E8007A4370 /* PlayVC.swift in Sources */,
 				01F3C8E0248BB0AB007A4370 /* SceneDelegate.swift in Sources */,
 				01F3C91C248C2AEA007A4370 /* SigninData.swift in Sources */,
+				0E9AC9A6248C4E68003B4CFA /* MusicsDataSE.swift in Sources */,
 				01F3C916248C1AE9007A4370 /* LoginService.swift in Sources */,
 				01F3C91A248C1F29007A4370 /* TabbarVC.swift in Sources */,
 			);
