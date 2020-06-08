@@ -370,3 +370,12 @@ struct HeartsServiceSE {
    - 특정한 commit으로 head를 옮길 수 있다.
    - **git push -f origin master** 명령어로 마스터 log를 밀어버린다.
    - 다시 시작한다....
+
+<hr/>
+
+> 서버 파트
+
+서버 파트는 Readme가 잘 정리되어 있어서 링크를 첨부합니다.
+
+[서버파트 README](https://github.com/soptkathon/soptkathon-server/blob/master/README.md)
+
