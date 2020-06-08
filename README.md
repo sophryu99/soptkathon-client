@@ -324,3 +324,49 @@ struct HeartsServiceSE {
 
 - Git으로 작업하는 것이 익숙치 않아 처음에 git으로 작업물을 주고 받는 것을 익히는데에 시간이 많이 소요되었다 ㅠㅠ 또 중간 중간 발생한 conflict를 해결하는 데 해커톤 시간의 대부분을 뺏긴 것 같다.
 - 데이터 통신이 확실히 너무 어렵다.. 앱잼 전까지 우리 모두 능숙하게 데이터 통신을 할 수 있도록 열심히 공부하기로 했다~!
+
+**Git, Conflict 공부한 것들**❗️❗️:
+
+> **깃을 통해 협업을 진행할 때 필수사항 정리!!**
+
+- master에 .gitignore, 대략적인 기본 Project file을 올린다.
+- dev 브랜치를 만들어서 master을 건드리지 않도록 한다.
+
+1. **git clone <remote>**
+2. **git checkout -b <개인 브랜치명>**
+3. **git push origin <개인 브랜치명>** // 로컬 브랜치랑 리모트 브랜치 연결!
+4. 각자 작업
+5. merge
+
+> 동민이형이 친절하게 그려서 설명해준 Git Flow
+
+![image](https://user-images.githubusercontent.com/56633607/84020396-b6435300-a9bd-11ea-915f-65e6fd0909e3.png)
+
+- **2~3번 사이에 "git checkout 재욱" 이 추가되어야 한다!**
+
+
+
+### ***Conflict가 생기면 어떻게 해결할까?***
+
+1. 충돌이 생긴 부분을 확인한다
+2. 터미널 or VSCode 로 해당 파일을 open 한다.
+
+![image](https://user-images.githubusercontent.com/56633607/84020842-7761cd00-a9be-11ea-8a25-8409663b16d5.png)
+
+- 이런식으로 충돌이 생긴부분에서 
+  - <<<<<<HEAD
+  - ========== 여기 까지가 **나의 코드**
+  - '>>>>>>>> sehwaryu'까지 **세화 코드**
+  - **겹치는 부분을 지워주고 저장한다!!**
+- **add, commit, push를 한다.**
+- **제대로 병합이 진행 되었는지 확인하기 위해 xcode로 프로젝트를 실행시켜본다!!**
+
+
+
+### ***만약 프로젝트 파일에 문제가 생기거나 Git 을 뒤로 되돌리고 싶다면??***
+
+1. ***git log*** 명령어를 사용해서 commit 내용들을 확인한다.
+2. **git reset --hard <commit id>**
+   - 특정한 commit으로 head를 옮길 수 있다.
+   - **git push -f origin master** 명령어로 마스터 log를 밀어버린다.
+   - 다시 시작한다....
