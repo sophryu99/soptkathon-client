@@ -328,6 +328,8 @@ struct HeartsServiceSE {
 **Git, Conflict 공부한 것들**❗️❗️:
 
 > **깃을 통해 협업을 진행할 때 필수사항 정리!!**
+>
+> [Git 설명 잘 해놓은 링크](https://github.com/soogoon/Github-Cookbook/blob/master/Git-Github-Collaborating.md)
 
 - master에 .gitignore, 대략적인 기본 Project file을 올린다.
 - dev 브랜치를 만들어서 master을 건드리지 않도록 한다.
