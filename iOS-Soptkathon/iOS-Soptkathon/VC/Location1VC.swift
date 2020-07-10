@@ -61,6 +61,6 @@ extension Location1VC: UITableViewDataSource, UITableViewDelegate {
         
         view.locationName = self.locationNameList[indexPath.row]
         
-        self.navigationController?.pushViewController(view, animated: true)
+        self.present(view, animated: true)
     }
 }
